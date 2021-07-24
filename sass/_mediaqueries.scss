@@ -1,0 +1,93 @@
+/* MEDIA QUERIES */
+@media screen and (max-width: 780px){
+    /* FOOTER GLOBAL */
+    div.globalFooter {
+        flex-flow: column wrap;
+    }
+    div.globalFooter__column {
+        margin: 25px 0 0 0;
+            &.logos {
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+            &.logos img {
+                margin-top: 22px;
+            }
+    }
+    /* PÁGINA INICIO */
+    section.homeCarrusel {
+        display: flex;
+        flex-flow: column-reverse wrap;
+    }
+    div.homeCarrusel__row01 {
+        width: 100%;
+    }
+    div.homeCarrusel__row02 {
+        max-width: 100%;
+        margin: 0 0 45px 0;
+    }
+    section.homeMap {
+        flex-flow: column nowrap;
+        height: auto;
+    }
+    div.homeMap__row01 {
+        padding: 55px 8% 25px 8%;
+        width: 100%;
+    }
+    div.homeMap__row02 {
+        width: 100%;
+    }
+    div.row02__responsive {
+        height: 450px;
+    }
+    /* PÁGINA MENÚ */
+    div.menu__table {
+        width: 100%
+    }
+    /* PÁGINA VISÍTANOS */
+    section.nosotros {
+        width: 100%;
+    }
+    div.visitanosMapas {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0;
+        margin: 25px 0;
+        width: 100vw;
+    }
+    div.mapas__foto {
+        height: 350px;
+    }
+    div.mapas__mapa {
+        height: auto;
+    }
+    /* PÁGINA NOSOTROS */
+    div.nosotrosGaleria {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 45px 0 0 0;
+        gap: 15px 0;
+        width: 90vw;
+        margin: 0 auto;
+    }
+    div.nosotrosGaleria__fotos {
+        height: 320px;
+    }
+    div.nosotrosVideo {
+        padding: 0;
+        height: 235px;
+    }
+    /* PÁGINA CONTACTO */
+    div.Form__label.nombre {
+        grid-column: 1 / 3;
+    }
+    div.Form__label.telefono {
+        grid-column: 1 / 3;
+    }
+    div.Form__label.email {
+        grid-column: 1 / 3;
+    }
+    div.Form__label.area {
+        grid-column: 1 / 3;
+    }
+}

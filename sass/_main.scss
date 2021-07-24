@@ -1,0 +1,406 @@
+//VARIABLES
+$h-font: 'Barlow Condensed', sans-serif;
+$p-font: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+$brown-color: #EFEDE1;
+$green-color: #4F958B;
+$greenHover-color: #376861;
+$border-radius: 8px; 
+
+//GLOBALES
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: $p-font;
+}
+h1 {
+    font-family: $h-font;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+}
+h2 {
+    @extend h1;
+    font-size: 4rem;
+    margin-bottom: 15px;
+}
+h3 {
+    font-family: $p-font;
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+h4 {
+    font-family: $p-font;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+h5 {
+    font-family: $h-font;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+p {
+    font-family: $p-font;
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+.button {
+    background-color: $green-color;
+    padding: 10px 32px;
+    border: none;
+    display: inline-block;
+    color: #fff;
+    font-family: $h-font;
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 15px 0;
+    cursor: pointer;
+        &:hover {
+            background-color: $greenHover-color;
+            transition: .5s;
+            color: #fff;
+            text-decoration: none;
+        }
+        i {
+            margin-left: 15px;
+        }
+}
+div.separator {
+    width: 100px;
+    height: 3px;
+    background: $green-color;
+    margin-bottom: 15px;
+}
+.center {
+    margin: 0 auto;
+}
+.destacado {
+    color: #fff;
+    background-color: $green-color;
+    padding: 25px 45px;
+    font-weight: 700;;
+}
+
+// INICIO
+section.sceneHome {
+    background-image: url(../img/cafe-publico-1541x690.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: auto;
+    height: 600px;
+    padding: 85px 8%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+        h1 {
+            background-color: #fff;
+            padding: 8px 15px;
+            display: inline-block; 
+        }
+        h3 {
+            background-color: #fff;
+            padding: 8px 15px;
+            display: inline-block;
+        }
+}
+section.homeCarrusel {
+    padding: 85px 8%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+div.homeCarrusel__row01 {
+    width: 50%;
+}
+div.homeCarrusel__row02 {
+    max-width: 530px;
+    margin: 0 auto;
+}
+section.homeVideo {
+    padding: 0 2%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+video.homeVideo__video {
+    max-width: 100%;
+    height: auto;
+    border-radius: $border-radius;
+    display: block;
+    margin: 0 auto;
+    -webkit-box-shadow: 0px 0px 40px -17px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 40px -17px rgba(0,0,0,1);
+    box-shadow: 0px 0px 40px -17px rgba(0,0,0,1);
+}
+section.homeCols {
+    padding: 28% 5% 85px 8%;
+    margin-top: -20%;
+    text-align: center;
+    background-color: $brown-color;
+}
+div.homeCols__containerColumns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+div.containerColumns__column {
+    max-width: 320px;
+    margin: 45px 18px;
+    transition: transform .25s cubic-bezier(.25,.46,.45,.94);
+        &:hover {
+            transform: translate(0, -8px);
+        }
+        img {
+            max-width: 90%;
+            margin-bottom: 15px;
+            border-radius: $border-radius;
+            transition: .5s;
+        }
+        img:hover {
+            -webkit-box-shadow: 0px 0px 40px -17px rgba(0,0,0,1);
+            -moz-box-shadow: 0px 0px 40px -17px rgba(0,0,0,1);
+            box-shadow: 0px 0px 40px -17px rgba(0,0,0,1);
+            cursor: pointer;
+        }
+}
+section.homeMap {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-flow: row wrap;
+        .icon {
+            font-size: 6.5rem;
+            margin-bottom: 15px;
+        }
+}
+div.homeMap__row01 {
+    width: 50vw;
+    padding: 85px 65px 85px 8%;
+    align-self: center;
+}
+div.homeMap__row02 {
+    width: 50vw;
+}
+div.row02__responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 100%;
+        iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+}
+
+//MENÚ
+section.menu {
+    text-align: center;
+    padding: 85px 8%;
+}
+div.menu__table {
+    margin: 45px auto;
+    width: 80%;
+        table {
+            table-layout: fixed;
+            width: 100%;
+        }
+        thead th {
+            padding: 15px;
+            font-family: $h-font;
+            font-weight: 600;
+            font-size: 2rem;
+            text-transform: uppercase;
+            background-color: $brown-color;
+        }
+        tbody td {
+            padding: 15px;
+            font-family: $p-font;
+            font-size: 1.6rem;
+        }
+        tbody tr:nth-child(even) {
+            background-color: $brown-color;
+        }
+}
+section.imagenFooter {
+    display: flex;
+    flex-flow: row wrap;
+}
+@each $fotofooter in 1, 2, 3, 4 {
+    div.imagenFooter__foto#{$fotofooter} {
+        background-image: url(../img/foto#{$fotofooter}.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 400px;
+        min-width: 400px;
+        flex-grow: 1;
+    }
+}
+
+//VISÍTANOS
+section.visitanos {
+    text-align: center;
+    padding: 85px 0;
+}
+div.visitanosInfo {
+    width: 65vw;
+    margin: 0 auto;
+}
+div.visitanosMapas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    margin: 25px auto;
+    width: 75vw;
+}
+div.mapas__foto {
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 530px;
+        &.gam {
+            background-image: url(../img/foto1.jpg);
+        }
+}
+div.mapas__mapa {
+    width: 100%;
+    height: 530px;
+    background-color: black;
+}
+
+//NOSOTROS
+section.nosotros {
+    width: 90vw;
+    margin: 0 auto;
+}
+div.nosotrosTexto {
+    padding: 85px 8% 0 8%;
+}
+div.nosotrosTexto p {
+    margin-bottom: 15px;
+}
+div.nosotrosGaleria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 100%;
+    padding: 45px 8% 0 8%;
+}
+div.nosotrosGaleria__fotos {
+    height: 25vw;
+    position: relative;
+    overflow: hidden;
+}
+div.nosotrosGaleria__fotosBig {
+    @extend div.nosotrosGaleria__fotos;
+}
+.big {
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
+    min-height: 100%;
+}
+div.nosotrosGaleria__fotos img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+div.nosotrosVideo {
+    margin: 45px auto 85px auto;
+    padding: 0 8%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+}
+
+//CONTACTO
+section.contacto {
+    padding: 85px 8%;
+        p {
+            margin-bottom: 15px;
+        }
+}
+form.contacto__Form {
+    max-width: 600px;
+    margin: 85px auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-gap: 5px;
+}
+div.Form__label {
+    padding: 5px 15px;
+        label {
+            font-size: 1.5rem;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            font-family: $p-font;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            border: 1px solid #e1e1e1;
+            appearance: none;
+            -webkit-appearance: none;
+        }
+        &.enviar input {
+            background-color: $green-color;
+            padding: 10px 32px;
+            border: none;
+            display: inline-block;
+            color: #fff;
+            font-family: $h-font;
+            font-weight: 500;
+            font-size: 1.6rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin: 15px 0;
+            cursor: pointer;
+        }
+        &enviar input:hover {
+            background-color: $greenHover-color;
+            transition: .5s;
+        }
+}
+div.Form__label.nombre {
+    grid-column: 1 / 1;
+}
+div.Form__label.telefono {
+    grid-column: 2 / 3;
+}
+div.Form__label.email {
+    @extend div.Form__label.nombre;
+}
+div.Form__label.area {
+    @extend div.Form__label.telefono;
+}
+div.Form__label.asunto {
+    grid-column: 1 / 3;
+}
+div.Form__label.mensaje {
+    @extend div.Form__label.asunto;
+}
+div.Form__label.enviar {
+    @extend div.Form__label.asunto;
+}

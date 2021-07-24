@@ -1,0 +1,44 @@
+//VARIABLES
+$h-font: 'Barlow Condensed', sans-serif;
+$p-font: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+$brown-color: #EFEDE1;
+$green-color: #4F958B;
+$greenHover-color: #376861;
+$border-radius: 8px; 
+
+// NAV BAR
+nav.navbar {
+    padding: 20px;
+    z-index: 999;
+}
+a.navbar-brand {
+    font-family: $h-font;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #000;
+    text-decoration: none;
+}
+li.nav-item {
+    font-size: 1.6rem;
+    font-family: $p-font;
+
+}
+.bg-light {
+    background-color: #fff !important;
+}
+
+// TITLE BAR
+section.titleBar {
+    background-image: url(../img/bg-headertitle.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: auto;
+    padding: 5% 8%;
+        h1 {
+            background-color: #fff;
+            padding: 8px 15px;
+            display: inline-block;
+        }
+}
