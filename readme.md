@@ -31,6 +31,4 @@ _Lenguajes, técnicas y aplicaciones utilizados en la construcción del proyecto
 * Responsively App
 
 ---
-⌨️ con ❤️ por **Fabrizio Santis**
-01 de agosto, 2021
-Santiago, Chile
+⌨️ con ❤️ por **Fabrizio Santis**. 01 de agosto, 2021. Santiago, Chile
