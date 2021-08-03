@@ -93,7 +93,7 @@ div.separator {
 }
 
 // INICIO
-section.sceneHome {
+header.sceneHome {
     background-image: url(../img/cafe-publico-1541x690.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -249,7 +249,7 @@ section.imagenFooter {
         background-size: cover;
         background-repeat: no-repeat;
         min-height: 400px;
-        min-width: 400px;
+        min-width: 50vw;
         flex-grow: 1;
     }
 }
@@ -282,7 +282,6 @@ div.mapas__foto {
 div.mapas__mapa {
     width: 100%;
     height: 530px;
-    background-color: black;
 }
 
 //NOSOTROS

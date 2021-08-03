@@ -46,6 +46,11 @@
     div.menu__table {
         width: 100%
     }
+    @each $fotofooter in 1, 2, 3, 4 {
+        div.imagenFooter__foto#{$fotofooter} {
+            min-width: 100vw;
+        }
+    }
     /* PÁGINA VISÍTANOS */
     section.nosotros {
         width: 100%;
