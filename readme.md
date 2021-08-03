@@ -15,7 +15,7 @@ El sitio web está programado enteramente en HTML y CSS, aplicando los criterios
 
 ## Construido con 🛠️
 
-_Lenguajes, técnicas y aplicaciones utilizados en la construcción del proyecto_
+_Lenguajes, técnicas y aplicaciones utilizados en la construcción del proyecto._
 
 * HTML (Estructura & SEO)
 * CSS (Propiedades básicas, media queries, box modeling, flexboxs & grids)
